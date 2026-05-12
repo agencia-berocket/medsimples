@@ -24,23 +24,15 @@
     --line: #E5E3F0;
     --line-strong: #D2CFE3;
 
+    /* MedSimples core blue palette */
     --blue: #1E5BFF;              /* MedSimples primary */
     --blue-deep: #1648D6;
     --blue-50: #EEF3FF;
     --blue-100: #DCE5FF;
 
-    /* DrumWave iridescent */
-    --dw-1: #6A2BFF;
-    --dw-2: #B14BFF;
-    --dw-3: #FF3DC1;
-    --dw-4: #5DD4FF;
-    --dw-5: #69F0AE;
-    --iri: linear-gradient(135deg, #5DD4FF 0%, #6A2BFF 30%, #B14BFF 55%, #FF3DC1 80%, #FFB85D 100%);
-    --iri-soft: linear-gradient(135deg, rgba(93,212,255,.15), rgba(106,43,255,.15), rgba(255,61,193,.15));
-
     --shadow-sm: 0 1px 2px rgba(15,23,42,.04);
-    --shadow-md: 0 6px 24px -8px rgba(106,43,255,.14), 0 2px 6px rgba(15,23,42,.04);
-    --shadow-lg: 0 30px 80px -20px rgba(30,91,255,.22), 0 12px 30px -16px rgba(177,75,255,.12);
+    --shadow-md: 0 6px 24px -8px rgba(30,91,255,.14), 0 2px 6px rgba(15,23,42,.04);
+    --shadow-lg: 0 30px 80px -20px rgba(30,91,255,.22), 0 12px 30px -16px rgba(30,91,255,.12);
     --shadow-dark: 0 24px 60px -20px rgba(10,15,31,.45);
 
     --radius-sm: 10px;
@@ -75,7 +67,7 @@
     font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
     color: var(--ink);
   }
-  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--iri);background-image:var(--iri)}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--blue)}
   .eyebrow.on-dark{color:#fff;opacity:.8}
 
   h1,h2,h3,h4{margin:0;color:var(--ink);letter-spacing:-0.025em;line-height:1.05}
@@ -87,8 +79,7 @@
   .serif-it{font-family:'Instrument Serif', serif; font-style:italic; font-weight:400; letter-spacing:-0.01em}
   .accent{color:var(--blue)}
   .iri-text{
-    background: var(--iri);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
+    color: inherit;
   }
 
   /* ========== Buttons ========== */
@@ -110,16 +101,10 @@
 
   .btn-iri{
     color:#fff;
-    background: var(--iri);
-    background-size: 200% 200%;
-    box-shadow: 0 14px 30px -8px rgba(177,75,255,.45), inset 0 -2px 0 rgba(0,0,0,.10);
-    animation: shimmer 6s ease-in-out infinite;
+    background: var(--blue);
+    box-shadow: 0 14px 30px -8px rgba(30,91,255,.3), inset 0 -2px 0 rgba(0,0,0,.10);
   }
-  @keyframes shimmer{
-    0%,100%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-  }
-  .btn-iri:hover{transform: translateY(-1px)}
+  .btn-iri:hover{transform: translateY(-1px); background: var(--blue-deep);}
 
   .btn-ghost{
     background:#fff;color:var(--ink);
@@ -146,8 +131,7 @@
   }
   .partner .x{opacity:.5;margin:0 2px}
   .partner .dw{
-    background: var(--iri);
-    -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;
+    color: var(--ink); font-weight:700;
   }
   .nav-links{display:flex;align-items:center;gap:24px}
   .nav-links a{font-size:14px;color:var(--ink-soft);font-weight:500}
@@ -179,23 +163,23 @@
       linear-gradient(180deg, rgba(247,246,251,.55) 0%, rgba(247,246,251,.28) 40%, rgba(247,246,251,.78) 100%),
       linear-gradient(100deg, rgba(247,246,251,.92) 0%, rgba(247,246,251,.55) 35%, rgba(247,246,251,.30) 65%, rgba(247,246,251,.85) 100%);
   }
-  /* DrumWave iridescent atmosphere blobs */
+  /* MedSimples atmosphere blobs */
   .hero-iri-1{
     position:absolute; z-index:-2;
     right:-180px; top:-120px; width:560px; height:560px; border-radius:50%;
-    background: radial-gradient(closest-side, rgba(177,75,255,.28), rgba(255,61,193,0));
+    background: radial-gradient(closest-side, rgba(30,91,255,.12), transparent);
     filter: blur(40px); pointer-events:none;
   }
   .hero-iri-2{
     position:absolute; z-index:-2;
     left:-160px; bottom:-180px; width:520px; height:520px; border-radius:50%;
-    background: radial-gradient(closest-side, rgba(93,212,255,.30), rgba(30,91,255,0));
+    background: radial-gradient(closest-side, rgba(30,91,255,.15), transparent);
     filter: blur(36px); pointer-events:none;
   }
   .hero-iri-3{
     position:absolute; z-index:-2;
     left:50%; top:30%; transform: translateX(-50%); width:420px; height:420px; border-radius:50%;
-    background: radial-gradient(closest-side, rgba(105,240,174,.18), transparent 70%);
+    background: radial-gradient(closest-side, rgba(30,91,255,.08), transparent);
     filter: blur(50px); pointer-events:none;
   }
 
@@ -211,13 +195,13 @@
     font-size:12px; font-weight:600; color: var(--ink); letter-spacing:.06em;
   }
   .hero-content .eyebrow-pill .dot{
-    width:8px;height:8px;border-radius:50%; background: var(--iri);
-    box-shadow: 0 0 0 0 rgba(177,75,255,.5); animation: pulse-iri 2.2s infinite;
+    width:8px;height:8px;border-radius:50%; background: var(--blue);
+    box-shadow: 0 0 0 0 rgba(30,91,255,.4); animation: pulse-blue 2.2s infinite;
   }
-  @keyframes pulse-iri{
-    0%{box-shadow:0 0 0 0 rgba(177,75,255,.5)}
-    70%{box-shadow:0 0 0 12px rgba(177,75,255,0)}
-    100%{box-shadow:0 0 0 0 rgba(177,75,255,0)}
+  @keyframes pulse-blue{
+    0%{box-shadow:0 0 0 0 rgba(30,91,255,.4)}
+    70%{box-shadow:0 0 0 12px rgba(30,91,255,0)}
+    100%{box-shadow:0 0 0 0 rgba(30,91,255,0)}
   }
   .hero-content h1{margin-top:24px}
   .hero-content h1 .line{display:block}
@@ -279,7 +263,7 @@
   }
   .hero-content .meta .dw{
     font-weight:700;
-    background: var(--iri); -webkit-background-clip:text;background-clip:text;color:transparent;
+    color: var(--ink);
   }
   .hero-content .meta .sep{opacity:.4}
 
@@ -312,7 +296,7 @@
   .alv-card:hover{transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent}
   .alv-card::before{
     content:""; position:absolute; inset:0; border-radius:inherit; padding:1px;
-    background: var(--iri);
+    background: var(--blue);
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor; mask-composite: exclude;
     opacity:0; transition: opacity .25s ease;
@@ -322,10 +306,10 @@
   .alv-card .num{
     display:inline-flex;align-items:center;justify-content:center;
     width:44px;height:44px;border-radius:14px;
-    background: var(--iri);
+    background: var(--blue);
     color:#fff; font-weight:800;font-size:14px;font-feature-settings:"tnum";
     margin-bottom:24px;
-    box-shadow: 0 8px 20px -8px rgba(177,75,255,.5);
+    box-shadow: 0 8px 20px -8px rgba(30,91,255,.4);
   }
   .alv-card h3{margin-bottom:8px}
   .alv-card .sub{color:var(--blue); font-size:13px; font-weight:600; letter-spacing:.02em; margin-bottom:14px}
@@ -363,9 +347,9 @@
   }
   .how-shell .head{text-align:center; max-width:780px; margin: 0 auto 56px; position:relative}
   .how-shell .head .eyebrow{color:#fff;opacity:.85}
-  .how-shell .head .eyebrow .dot{background: var(--iri)}
+  .how-shell .head .eyebrow .dot{background: var(--blue)}
   .how-shell .head h2{color:#fff; margin-top:14px}
-  .how-shell .head h2 .iri-text{background: var(--iri); -webkit-background-clip:text;background-clip:text;color:transparent}
+  .how-shell .head h2 .iri-text{color:#fff}
   .how-shell .head .lede{color:rgba(255,255,255,.75); margin: 20px auto 0}
 
   .how-steps{
@@ -389,10 +373,10 @@
   .how-step .pin{
     display:inline-flex;align-items:center;justify-content:center;
     width:36px;height:36px;border-radius:50%;
-    background: var(--iri);
+    background: var(--blue);
     color:#fff;font-weight:800;font-size:14px;
     margin-bottom: 22px;
-    box-shadow: 0 0 0 4px rgba(177,75,255,.18);
+    box-shadow: 0 0 0 4px rgba(30,91,255,.2);
   }
   .how-step h3{color:#fff; margin-bottom:12px; font-size:20px}
   .how-step p{color:rgba(255,255,255,.72); font-size:14.5px; line-height:1.65}
@@ -423,10 +407,10 @@
   @media (max-width: 720px){ .combined-shell{padding: 48px 22px 60px} }
   .combined-shell .head{text-align:center; max-width: 880px; margin: 0 auto 40px}
   .combined-shell .head .eyebrow{color:#fff;opacity:.85}
-  .combined-shell .head .eyebrow .dot{background: var(--iri)}
+  .combined-shell .head .eyebrow .dot{background: var(--blue)}
   .combined-shell .head h2{color:#fff; margin-top:14px}
   .combined-shell .head .lede{color: rgba(255,255,255,.72); margin: 22px auto 0}
-  .combined-shell .head .iri-text{background: var(--iri); -webkit-background-clip:text;background-clip:text;color:transparent}
+  .combined-shell .head .iri-text{color:#fff}
 
   .combined-shell .formula{
     display:flex;align-items:center;justify-content:center;gap:14px;
@@ -437,7 +421,7 @@
     color:#fff;
   }
   .combined-shell .formula .gradient-num{
-    background: var(--iri); -webkit-background-clip:text;background-clip:text;color:transparent;
+    color: #fff;
     font-weight:400;
   }
   .combined-shell .formula .label{font-family:'Plus Jakarta Sans', sans-serif; font-style:normal; font-size:12px; color:rgba(255,255,255,.6); letter-spacing:.14em; text-transform:uppercase; font-weight:600}
@@ -470,10 +454,10 @@
   }
   .data-cell .icn{
     width:46px;height:46px;border-radius:14px;
-    background: var(--iri);
+    background: var(--blue);
     display:flex;align-items:center;justify-content:center;color:#fff;
     flex-shrink:0;
-    box-shadow: 0 8px 18px -8px rgba(177,75,255,.5);
+    box-shadow: 0 8px 18px -8px rgba(30,91,255,.4);
   }
   .data-cell .lab{display:flex;flex-direction:column;gap:3px}
   .data-cell .lab .t{font-size: 16px; font-weight:700; color:#fff}
@@ -500,7 +484,7 @@
   .pillar:hover{border-color: transparent; box-shadow: var(--shadow-md)}
   .pillar::before{
     content:""; position:absolute; inset:0; border-radius:inherit; padding:1px;
-    background: var(--iri);
+    background: var(--blue);
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor; mask-composite: exclude;
     opacity:0; transition: opacity .25s ease;
@@ -510,9 +494,9 @@
   .pillar .seal{
     display:inline-flex;align-items:center;justify-content:center;
     width:52px;height:52px;border-radius:16px;
-    background: var(--iri);
+    background: var(--blue);
     color:#fff; margin-bottom:22px;
-    box-shadow: 0 10px 22px -8px rgba(177,75,255,.5);
+    box-shadow: 0 10px 22px -8px rgba(30,91,255,.4);
   }
   .pillar h3{margin-bottom:12px}
   .pillar p{font-size:15px;color:var(--ink-soft);line-height:1.65}
@@ -559,7 +543,7 @@
   }
   .company::before{
     content:""; position:absolute; inset:0; border-radius:inherit; padding:1px;
-    background: var(--iri);
+    background: var(--blue);
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor; mask-composite: exclude;
     opacity:0; transition: opacity .25s ease;
@@ -601,8 +585,7 @@
   footer .legal{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%}
   footer .dw{
     font-weight:700;
-    background: var(--iri);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
+    color: #fff;
   }
 
   /* ========== Accent words in headlines — matches "saúde" reference ========== */
@@ -938,7 +921,7 @@
   </div>
 </section>
 
-<!-- =========== SEC 5 — Trust (iridescent orb + 3 pillars) =========== -->
+<!-- =========== SEC 5 — Trust (Logo + 3 pillars) =========== -->
 <section class="section trust" id="trust">
   <div class="wrap">
     <div class="orb-wrap reveal">
@@ -991,7 +974,7 @@
     <div>
       <div class="brand-lg">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#5DA3FF"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        MedSimples <span style="opacity:.5;font-weight:400">×</span> <span class="dw">DrumWave</span>
+        MedSimples <span style="opacity:.5;font-weight:400">×</span> <img src="Itens/LogoDW.avif" alt="DrumWave" style="height: 22px; width: auto; margin-left: 6px; margin-right: 1px; display: inline-block; vertical-align: middle;"> <span class="dw">DrumWave</span>
       </div>
       <p class="copy">A maior rede de crescimento em saúde do país. Um ecossistema licenciado onde indivíduos, hospitais e operadoras trocam dados de qualidade em condições justas.</p>
     </div>

@@ -666,6 +666,9 @@
     .data-cell .lab .t { font-size: 15px; }
     
     .company .req { font-size: 12px; padding: 8px 14px; }
+    
+    .hero-content .meta { gap: 8px; }
+    .hero-content .meta > span:first-child { width: 100%; display: block; margin-bottom: 2px; }
   }
 </style>
 </head>
@@ -722,11 +725,12 @@
       </a>
       <a href="#como" class="btn btn-ghost on-glass">Como funciona</a>
     </div>
-    <div class="meta reveal d4" style="flex-direction: column; gap: 10px;">
-      <div>Powered by <span class="dw">DrumWave</span></div>
-      <div style="opacity: 0.6; font-weight: 400; font-size: 11.5px; letter-spacing: 0.02em;">
-        • Ecossistema 100% licenciado • LGPD compliant
-      </div>
+    <div class="meta reveal d4">
+      <span>Powered by <span class="dw">DrumWave</span></span>
+      <span class="sep">•</span>
+      <span>Ecossistema 100% licenciado</span>
+      <span class="sep">•</span>
+      <span>LGPD compliant</span>
     </div>
   </div>
 </header>
@@ -1011,9 +1015,9 @@
       </div>
     </div>
 
-    <div class="legal" style="flex-direction: column; align-items: center; gap: 8px; text-align: center;">
+    <div class="legal">
       <span>© 2026 MedSimples. Powered by <span class="dw">DrumWave</span>.</span>
-      <span style="opacity: 0.6;">• Ecossistema 100% licenciado • LGPD compliant</span>
+      <span>Ecossistema licenciado · LGPD compliant</span>
     </div>
   </div>
 </footer>

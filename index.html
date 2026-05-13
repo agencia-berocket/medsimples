@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>MedSimples × DrumWave — A maior rede de crescimento em saúde do país</title>
+<title>MedSimples × DrumWave. A maior rede de crescimento em saúde do país</title>
 <meta name="description" content="MedSimples e DrumWave constroem o primeiro ecossistema licenciado de dados de saúde do Brasil. Abra uma Business dWallet®." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,8 +71,8 @@
   .eyebrow.on-dark{color:#fff;opacity:.8}
 
   h1,h2,h3,h4{margin:0;color:var(--ink);letter-spacing:-0.025em;line-height:1.05}
-  h1{font-size: clamp(38px, 9vw, 110px); font-weight:800}
-  h2{font-size: clamp(26px, 4.5vw, 60px); font-weight:700; line-height:1.06}
+  h1{font-size: clamp(48px, 8.25vw, 90px); font-weight:800; line-height:1.1}
+  h2{font-size: clamp(24px, 4vw, 52px); font-weight:700; line-height:1.06}
   h3{font-size: clamp(20px, 1.7vw, 24px); font-weight:700}
   p{margin:0;color:var(--ink-soft)}
   .lede{color:var(--muted); font-size: clamp(16px, 1.2vw, 18px); line-height:1.65; max-width: 680px}
@@ -203,7 +203,7 @@
     70%{box-shadow:0 0 0 12px rgba(30,91,255,0)}
     100%{box-shadow:0 0 0 0 rgba(30,91,255,0)}
   }
-  .hero-content h1{margin-top:24px}
+  .hero-content h1{margin-top:20px}
   .hero-content h1 .line{display:block}
   /* Solid bold sans blue with soft highlight bar — matches "saúde" reference */
   .hero-content h1 .saude{
@@ -212,9 +212,7 @@
     padding: 0 .04em;
   }
   .hero-content h1 .saude::after{
-    content:""; position:absolute; left:0; right:0; bottom:8%; height:34%;
-    background: linear-gradient(180deg, rgba(30,91,255,.10), rgba(30,91,255,.22));
-    border-radius: 6px; z-index:-1;
+    display: none;
   }
 
   /* "Eficiência" pen-strike edit — editorial correction mark */
@@ -319,10 +317,6 @@
   .how{
     background: var(--bg);
     position:relative;
-  }
-  .how::after{
-    content:""; position:absolute; left:50%; transform:translateX(-50%); top:60px;
-    width:1px;height:140px; background: linear-gradient(180deg, transparent, var(--line-strong));
   }
   .how-shell{
     background: var(--ink-card);
@@ -595,9 +589,7 @@
     padding: 0 .04em;
   }
   .accent-word::after{
-    content:""; position:absolute; left:0; right:0; bottom:8%; height:30%;
-    background: linear-gradient(180deg, rgba(30,91,255,.08), rgba(30,91,255,.20));
-    border-radius: 6px; z-index:-1;
+    display: none;
   }
   .accent-word-on-dark{
     color: #5DA3FF; /* lighter blue for dark surfaces */
@@ -605,9 +597,7 @@
     padding: 0 .04em;
   }
   .accent-word-on-dark::after{
-    content:""; position:absolute; left:0; right:0; bottom:8%; height:30%;
-    background: linear-gradient(180deg, rgba(93,163,255,.10), rgba(93,163,255,.22));
-    border-radius: 6px; z-index:-1;
+    display: none;
   }
 
   /* ========== Reveal animations ========== */
@@ -696,10 +686,10 @@
       <span class="line">em <span class="saude">saúde</span> do país.</span>
     </h1>
     <p class="lede reveal d2">
-      Os dados de saúde são o ativo mais subutilizado do nosso país. Estão fragmentados, desconectados e fora do alcance das pessoas a quem pertencem. Nos unimos à DrumWave para dar aos brasileiros a propriedade dos seus dados de saúde e criar um ecossistema licenciado onde indivíduos, hospitais e operadoras de saúde trocam dados de qualidade em condições justas, gerando valor para todos.
+      Os dados de saúde valem muito, e estão presos em silos, longe daqueles que os geram e a quem pertencem. Junto com a DrumWave, criamos o ecossistema licenciado que destrava esse valor para todos.
     </p>
     <div class="tagline reveal d3">
-      Cadastre seus produtos de dados uma única vez — nós cuidamos da distribuição em todo o ecossistema.
+      Abra sua Business dWallet e cadastre seus produtos. Nós cuidamos da infraestrutura para viabilizar este crescimento.
     </div>
     <div class="cta-row reveal d3">
       <a href="https://empresas.drumwave.com.br/?rastreamento=medsimples&utm_source=medsimples&utm_medium=lp_medsimples" target="_blank" rel="noopener noreferrer" class="btn btn-iri">
@@ -708,13 +698,7 @@
       </a>
       <a href="#como" class="btn btn-ghost on-glass">Como funciona</a>
     </div>
-    <div class="meta reveal d4">
-      <span>Powered by <span class="dw">DrumWave</span></span>
-      <span class="sep">•</span>
-      <span>Ecossistema 100% licenciado</span>
-      <span class="sep">•</span>
-      <span>LGPD compliant</span>
-    </div>
+
   </div>
 </header>
 
@@ -723,7 +707,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow"><span class="dot"></span> Business dWallet®</span>
-      <h2>Quatro alavancas de <span class="accent-word">crescimento</span>.</h2>
+      <h2>Quatro alavancas de <br><span class="accent-word">crescimento</span>.</h2>
       <p class="lede">Diferencie o que você vende e crie novas formas de aumentar a sua receita. Tudo a partir de um único ecossistema licenciado de dados de saúde.</p>
     </div>
 
@@ -732,28 +716,28 @@
         <div class="num">01</div>
         <h3>Produtos enriquecidos com dados</h3>
         <div class="sub">Diferencie o que você vende</div>
-        <p>Incorpore dados licenciados e de alta qualidade diretamente em seus produtos e serviços como um benefício de valor agregado. Impulsione a retenção de clientes, o cross-selling e a diferenciação competitiva.</p>
+        <p>Cadastre seus produtos e serviços e enriqueça-os com dados licenciados. Sua empresa passa a oferecer aos clientes produtos com valor agregado, fortalecendo a retenção e a diferenciação competitiva.</p>
       </article>
 
       <article class="alv-card reveal d1">
         <div class="num">02</div>
         <h3>Construa o ecossistema de dados de saúde</h3>
         <div class="sub">Vantagem de pioneirismo</div>
-        <p>Ajude a construir a primeira base coletiva de dados de saúde totalmente licenciada e integrada, com permissão concedida por cada contribuinte. Nenhum outro ecossistema combina essa escala, qualidade e clareza regulatória.</p>
+        <p>Esteja à frente da inovação ajudando a construir o primeiro ecossistema onde dados de saúde são totalmente licenciados e integrados. Nenhum outro combina essa escala, qualidade e clareza regulatória.</p>
       </article>
 
       <article class="alv-card reveal d2">
         <div class="num">03</div>
         <h3>Conexões de confiança com consumidores</h3>
         <div class="sub">Alcance novos públicos</div>
-        <p>Conecte-se com segmentos de consumidores altamente específicos por meio de um ecossistema transparente. Seus clientes se tornam co-proprietários, aprofundando a confiança e reduzindo os custos de aquisição.</p>
+        <p>Conecte-se com empresas e segmentos de consumidores dentro de um ecossistema transparente. Seus clientes se tornam co-proprietários dos dados e dos benefícios gerados por eles, aprofundando a confiança.</p>
       </article>
 
       <article class="alv-card reveal d3">
         <div class="num">04</div>
         <h3>Nova receita a partir de dados</h3>
         <div class="sub">Monetize o que você já tem</div>
-        <p>Gere receita recorrente licenciando dados dentro do ecossistema, sem que eles saiam dele. Transforme ativos de dados existentes, antes vistos como custo operacional, em uma fonte de renda mensurável e que agrega margem.</p>
+        <p>Gere novas fontes de receita licenciando dados dentro do ecossistema, sem que eles saiam dele. Transforme ativos antes vistos como custo em uma nova fonte de receita recorrente.</p>
       </article>
     </div>
 
@@ -772,26 +756,26 @@
     <div class="how-shell reveal">
       <div class="head">
         <span class="eyebrow on-dark"><span class="dot"></span> Como funciona</span>
-        <h2>Crie uma Business dWallet® e enriqueça seus produtos e serviços com <span class="accent-word-on-dark">dados</span>.</h2>
+        <h2>Etapas para criar uma conta Business dWallet® e enriquecer seus produtos com <span class="accent-word-on-dark">dados</span>.</h2>
       </div>
 
       <div class="how-steps">
         <article class="how-step reveal">
           <div class="pin">01</div>
-          <h3>Abra a sua Business dWallet®</h3>
-          <p>Configure uma dWallet® segura para tomar a custódia dos dados que você quer possuir em propriedade compartilhada com seus clientes. Controle o que você contribui, como é licenciado e suas conexões, tudo em um só lugar.</p>
+          <h3>Abra a sua conta Business dWallet®</h3>
+          <p>Abra e configure a sua conta Business dWallet® gratuita. Trata-se de uma carteira de dados não-custodial, a porta de entrada para empresas acessarem a plataforma de produtos e serviços onde o valor do dado é reconhecido e transacionado.</p>
         </article>
 
         <article class="how-step reveal d1">
           <div class="pin">02</div>
-          <h3>Cadastre seus produtos e dados</h3>
-          <p>Escolha os produtos que você quer ter em propriedade compartilhada com seus clientes — a MedSimples simplifica a conexão entre vocês dentro do ecossistema de dados. Basta encontrar seu produto ou serviço e selecionar a MedSimples como provedora de hospedagem.</p>
+          <h3>Cadastre seus produtos</h3>
+          <p>Escolha os produtos que quer cadastrar e enriqueça-os com dados. Cada um passa a ter um identificador único (dSKU) e a compor o ecossistema. A MedSimples apoia com a infraestrutura, oferecendo alternativa de hospedagem.</p>
         </article>
 
         <article class="how-step reveal d2">
           <div class="pin">03</div>
           <h3>Entre no Marketplace e faça ofertas</h3>
-          <p>Faça ofertas para seus clientes ou para outras organizações de saúde com base em critérios precisos e personalizados. Quando outros licenciam seus dados, a receita começa a fluir para você.</p>
+          <p>Faça ofertas personalizadas para seus clientes ou para outras organizações de saúde dentro do ecossistema. Quando outras empresas licenciam os dados da sua, você pode aceitar as ofertas e receber o benefício proporcionado.</p>
         </article>
       </div>
 
@@ -801,7 +785,6 @@
           <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>
-      <div class="easy">Fácil · Seguro · Licenciado</div>
     </div>
   </div>
 </section>
@@ -811,7 +794,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow"><span class="dot"></span> Para empresas</span>
-      <h2>Abra a sua <span class="accent-word">Business dWallet®</span></h2>
+      <h2>Abra uma <span class="accent-word">Business dWallet®</span></h2>
       <p class="lede">Com a Business dWallet® você terá acesso a um portfólio de funcionalidades que irá ajudar o seu negócio a integrar o ecossistema onde empresas e indivíduos podem ter propriedade e de beneficiar do valor gerado pelos seus dados.</p>
       <div class="disclaimer">A DrumWave não é afiliada a nenhuma das empresas listadas abaixo.</div>
     </div>
@@ -870,7 +853,7 @@
       <div class="head">
         <span class="eyebrow on-dark"><span class="dot"></span> Value Schema</span>
         <h2>Dados combinados são <span class="accent-word-on-dark">exponencialmente</span> mais valiosos.</h2>
-        <p class="lede">Um único conjunto de dados mostra o que aconteceu. Conjuntos combinados mostram o que fazer a seguir. O ecossistema da DrumWave quebra silos tradicionais, combinando dados totalmente licenciados de operadoras, prestadores, indústria farmacêutica e consumidores para gerar insights que nenhuma organização produziria sozinha. Dados brutos nunca são vistos ou acessados por outros participantes — cada contribuinte se beneficia do valor criado mantendo propriedade e controle total.</p>
+        <p class="lede">Um único conjunto de dados mostra o que aconteceu. Conjuntos combinados mostram o que fazer a seguir. O ecossistema da DrumWave quebra silos tradicionais, combinando dados totalmente licenciados de operadoras, prestadores, indústria farmacêutica e consumidores para gerar insights que nenhuma organização produziria sozinha. Dados brutos nunca são vistos ou acessados por outros participantes. Cada contribuinte se beneficia do valor criado mantendo propriedade e controle total.</p>
       </div>
 
       <div class="formula">
@@ -930,7 +913,7 @@
     <div class="section-head center reveal">
       <span class="eyebrow"><span class="dot"></span> Promessa DrumWave</span>
       <h2>A DrumWave não <span class="accent-word">compartilha</span>, não <span class="accent-word">vende</span> e não <span class="accent-word">armazena</span> seus dados.</h2>
-      <p class="lede">A DrumWave conecta empresas e consumidores, viabilizando negócios a reconhecerem e compartilharem o valor dos dados com seus clientes — sem vender, guardar ou usar o que é direito dos usuários.</p>
+      <p class="lede">A DrumWave conecta empresas e consumidores, viabilizando negócios a reconhecerem e compartilharem o valor dos dados com seus clientes, sem vender, guardar ou usar o que é direito dos usuários.</p>
     </div>
 
     <div class="promise">
@@ -947,7 +930,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
         </div>
         <h3>Nós não compartilhamos</h3>
-        <p>Os dados são dos seus clientes. Com a dWallet®, cada dado capturado vira um ativo. Indivíduos podem guardar com segurança, acumular valor ao longo do tempo e usar quando quiserem — para benefícios próprios e, se optarem, também para outros.</p>
+        <p>Os dados são dos seus clientes. Com a dWallet®, cada dado capturado vira um ativo. Indivíduos podem guardar com segurança, acumular valor ao longo do tempo e usar quando quiserem, para benefícios próprios e, se optarem, também para outros.</p>
       </article>
 
       <article class="pillar reveal d2">
